@@ -5,8 +5,11 @@
   <hr class="text-white">
 
   <div class="list-group list-reset">
-    <button class="list-group-item list-group-item-action">
-      Fire emblem
+    <button
+    *ngFor="let tag of getTagHistory"
+    class="list-group-item list-group-item-action">
+      <!-- texto en base a tagshistory -->
+      {{tag | titlecase}}
     </button>
 
   </div>
