@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { GifsService } from '../../gifs/services/gifs.service';
 
 @Component({
@@ -9,8 +9,13 @@ import { GifsService } from '../../gifs/services/gifs.service';
 export class SidebarComponent {
   constructor(private gifsService: GifsService){}
 
+  public searchTag(tag: string){
+    this.gifsService.searchTag(tag);
+  }
+
   get getTagHistory(){
     return this.gifsService.getTagHistory
   }
+
 
 }
