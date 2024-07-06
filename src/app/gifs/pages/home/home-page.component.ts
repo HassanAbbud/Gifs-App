@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { GifsService } from '../../services/gifs.service';
 import { Gif } from '../../interfaces/gifs.interfaces';
+import { SharedModule } from '../../../shared/shared.module';
 
 @Component({
   selector: 'gifs-home-page',
@@ -12,5 +13,6 @@ export class HomePageComponent {
 
   get getGifs(): Gif[]{
     return this.gifsService.gifList;
+
   }
 }

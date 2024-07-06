@@ -10,7 +10,8 @@ import { GifsModule } from './gifs/gifs.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+
   ],
   imports: [
     BrowserModule,

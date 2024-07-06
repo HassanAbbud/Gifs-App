@@ -1,5 +1,5 @@
-import { Component, Input } from '@angular/core';
-import { GifsService } from '../../gifs/services/gifs.service';
+import { Component } from '@angular/core';
+import { GifsService } from '../../../gifs/services/gifs.service';
 
 @Component({
   selector: 'shared-sidebar',
@@ -16,6 +16,5 @@ export class SidebarComponent {
   get getTagHistory(){
     return this.gifsService.getTagHistory
   }
-
 
 }
